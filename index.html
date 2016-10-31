@@ -8,9 +8,9 @@
 </head>
 <body class="w-100">
   <header class="bg-white bb b--light-gray">
-    <div class="dt pa3 w-100 w-80-l center">
+    <div class="dt pa3 w-100 w-70-l center">
       <div class="dtc-ns v-mid w-20-ns tc">
-        <a class="logo link center" href="/"><span class="dib ttu tc black pa2 ba bw2">Artst</span></a>
+        <a class="logo link center" href="/"><span class="dib ttu tc tracked-mega black pa2 ba bw2">Artst</span></a>
       </div>
 
       <nav class="db dtc-ns v-mid w-100 w-80-ns tc tr-ns mt3 mt0-ns">
@@ -19,6 +19,42 @@
       </nav>
     </div>
   </header>
+
+  <section class="content ph3 w-100 w-70-l center">
+    <h1 class="tc mv5">Selected works</h1>
+    <article class="relative ph2">
+      <a class="link black" href="assets/images/image_1.jpg">
+        <div class="aspect-ratio aspect-ratio--16x9 z-1">
+          <div class="aspect-ratio--object cover" style="background:url(assets/images/image_1.jpg);"></div>
+        </div>
+        <div class="absolute-l z-2 top-2 right--2 ba-l bw2-l pa2-l b--black bg-white">
+          <h2 class="f3">_01</h2>
+          <p class="f5">Circle windows in Penang near Komtar</p>
+        </div>
+      </a>
+    </article>
+
+    <article class="gallery cf ph2">
+   		<script id="gallery-item-template" type="text/template">
+      {{#links}}
+        <div class="fl w-100 w-50-l relative">
+          <a href="{{link}}" class="link black">
+            <div class="aspect-ratio--16x9 cover bg-center" style="background: url({{link}});">
+            </div>
+            <div class="bg-white pa2 ba-l bw2-l absolute-l top--2 left--2-l z-2">
+              <h2 class="f3">{{title}}</h2>
+              <p class="f5">{{text}}</p>
+            </div>
+          </a>
+        </div>
+      {{/links}}
+    </script> 
+    </article>
+  </section>
+
+<script src="node_modules/mustache/mustache.js""></script>
+<script src="node_modules/jquery/dist/jquery.js""></script>
+<script src="assets/javascript/main.js""></script>
   
 </body>
 </html>
