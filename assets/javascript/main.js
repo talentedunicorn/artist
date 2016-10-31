@@ -2,7 +2,7 @@ var gallery = (function() {
   var data = [
     {
       title: "_02",
-      text: "Blue miles of sky",
+      text: "Blue miles of sky with brown walls",
       link: "assets/images/image_2.jpg",
       width: "50"
     },
@@ -14,12 +14,12 @@ var gallery = (function() {
     },
 		{
       title: "_04",
-      text: "Lights by the water",
+      text: "Lights by the water at night",
       link: "assets/images/image_4.jpg",
     },
 		{
       title: "_05",
-      text: "Island on the rocks",
+      text: "Coconut trees on rocky breach",
       link: "assets/images/image_5.jpg"
     }
   ];
