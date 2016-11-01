@@ -23,11 +23,11 @@
   <section id="work" class="ph3 w-100 w-70-l center">
     <h1 class="tc ttu tracked f4 mv5">Selected works</h1>
     <article class="relative pa2">
-      <a class="link black" href="assets/images/image_1.jpg">
+      <a class="gallery-item link black" href="assets/images/image_1.jpg">
         <div class="aspect-ratio aspect-ratio--16x9 z-1">
           <div class="aspect-ratio--object cover" style="background:url(assets/images/image_1.jpg);"></div>
         </div>
-        <div class="absolute-l z-2 top-2 left--2 ba-l bw2-l pa2-l b--black bg-white">
+        <div class="card absolute-l z-2 top-2 left--2 ba-l bw2-l pa2-l b--black bg-white">
           <h2 class="f3">_01</h2>
           <p class="f5">Circle windows in Penang near Komtar</p>
         </div>
@@ -38,10 +38,10 @@
    		<script id="gallery-item-template" type="text/template">
       {{#links}}
         <div class="fl w-100 w-{{width}}-l pa2 relative">
-          <a href="{{link}}" class="link black">
+          <a href="{{link}}" class="gallery-item link black">
             <div class="aspect-ratio--16x9 cover bg-center" style="background: url({{link}});">
             </div>
-            <div class="bg-white pa2 ba-l bw2-l b--black absolute-l top-2 left--2-l z-2">
+            <div class="card bg-white pa2 ba-l bw2-l b--black absolute-l top-2 left--2-l z-2">
               <h2 class="f3">{{title}}</h2>
               <p class="f5">{{text}}</p>
             </div>
@@ -102,6 +102,17 @@
         <p class="tc">Made by <a class="link b light-blue" target="_blank" href="http://talentedunicorn.com">Talented Unicorn</a></p>
     </div>
   </footer>
+
+  <div id="modal" style="display: none;" class="fixed z-5 top-0 bottom-0 left-0 right-0 overflow-auto bg-black-50 pa3">
+    <button class="close pv2 ph3 mv3 db center ttu b ba b--white bg-white">Close</button>
+    <article class="pa2 w-80-l center">
+      <img class="db mw-100 center" src="assets/images/image_1.jpg" alt="">
+      <div class="card pv2 ph3 bg-white">
+        <h2 class="f3">_01</h2>
+        <p class="f5">Circle windows in Penang near Komtar</p>
+      </div>
+    </article>
+  </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
