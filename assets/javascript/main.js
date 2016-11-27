@@ -24,25 +24,25 @@ $(function() {
 var gallery = (function() {
   var data = [
     {
-      title: "_02",
-      text: "Blue miles of sky with brown walls",
+      title: "Blue miles of sky with brown walls",
+      text: "Singapore",
       link: "assets/images/image_2.jpg",
       width: "50"
     },
     {
-      title: "_03",
-      text: "Moon and chimney",
+      title: "Moon and chimney",
+      text: "Arusha, Tanzania",
       link: "assets/images/image_3.jpg",
       width: "50"
     },
     {
-      title: "_04",
-      text: "Lights by the water at night",
+      title: "Lights by the water at night",
+      text: "Pulau Perhentian, Malaysia",
       link: "assets/images/image_4.jpg",
     },
     {
-      title: "_05",
-      text: "Coconut trees on rocky breach",
+      title: "Coconut trees on rocky breach",
+      text: "Pulau Perhentian, Malaysia",
       link: "assets/images/image_5.jpg"
     }
   ];
