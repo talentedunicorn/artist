@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="node_modules/tachyons/css/tachyons.css">
 </head>
 <body class="w-100">
-  <header class="bg-white bb b--light-gray pv3 pv0-ns">
+  <header class="fixed-ns z-5 top-0 w-100 bg-white bb b--light-gray pv3 pv0-ns">
     <div class="dt ph3-l w-100 w-70-l center">
       <div class="dtc-ns v-mid w-20-ns tc tl-ns">
         <a class="logo link center" href="/"><span class="dib ttu tc tracked-mega bg-black white b--black pa3 ba bw2">Artst</span></a>
@@ -15,24 +15,30 @@
 
       <nav class="db dtc-ns v-mid w-100 w-80-ns tc tr-ns mt3 mt0-ns">
         <a class="link black hover-blue b f6 tc ttu tracked pa3 mh3-ns db dib-ns" href="#about">About</a>
+        <a class="link black hover-blue b f6 tc ttu tracked pa3 mh3-ns db dib-ns" href="#work">Work</a>
         <a class="link black hover-blue b f6 tc ttu tracked pa3 mh3-ns db dib-ns" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
+  <section id="hero" class="vh-100 pt5 cf cover bg-left bg-center-l relative dt w-100" style="background-image:url(assets/images/image_1.jpg);">
+    <div class="w-60 center dtc v-mid">
+      <h1 class="ttu tc white">Artst</h1>
+    </div>
+  </section>
 
-  <section id="work" class="ph3 w-100 w-70-l center">
+  <section id="work" class="cf mb5 pv4 ph3 w-100 w-70-l center">
     <h1 class="tc ttu tracked f4 mv5">Selected works</h1>
-    <article class="relative pa2">
-      <a class="gallery-item link black" href="assets/images/image_1.jpg">
-        <div class="aspect-ratio aspect-ratio--16x9 z-1">
-          <div class="aspect-ratio--object cover" style="background:url(assets/images/image_1.jpg);"></div>
-        </div>
-        <div class="card absolute-l z-2 top-2 left--2 ba-l bw2-l ph2 pv3 b--black bg-white">
-          <h2 class="f6 ttu mt0">Circle windows near Komtar</h2>
-          <small class="i">Penang, Malaysia</small>
-        </div>
-      </a>
-    </article>
+    <!-- <article class="relative pa2"> -->
+    <!--   <a class="gallery-item link black" href="assets/images/image_1.jpg"> -->
+    <!--     <div class="aspect-ratio aspect-ratio--16x9 z-1"> -->
+    <!--       <div class="aspect-ratio--object cover" style="background:url(assets/images/image_1.jpg);"></div> -->
+    <!--     </div> -->
+    <!--     <div class="card absolute-l z-2 top-2 left--2 ba-l bw2-l ph2 pv3 b--black bg-white"> -->
+    <!--       <h2 class="f6 ttu mt0">Circle windows near Komtar</h2> -->
+    <!--       <small class="i">Penang, Malaysia</small> -->
+    <!--     </div> -->
+    <!--   </a> -->
+    <!-- </article> -->
 
     <article class="gallery cf">
    		<script id="gallery-item-template" type="text/template">
@@ -52,7 +58,7 @@
     </article>
   </section>
 
-  <section id="about" class="mt5 bt b--light-gray">
+  <section id="about" class="pv4 bt b--light-gray">
     <div class="w-100 w-50-l center mv5 ph3">
       <header class="mb4 ph2">
         <h1 class="f2">Hi there!</h1>
